@@ -10,10 +10,10 @@ from threading import Timer
 import pytz
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7297758734:AAEAHixFYsJ3n9U2Q3Nd8MIVl_X-AW5jHqU')
+bot = telebot.TeleBot('7290034049:AAEXuyjm44Istu2GZZ6XIEYGoIY2Q7NC4f8')
 
 # Admin user IDs
-admin_id = ["2136214036"]
+admin_id = ["2136214036","6849493144"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -186,7 +186,7 @@ def add_user(message):
                     user_access[user_to_add] = {"expiry_time": expiry_timestamp}
                     # Save user access data
                     save_user_access(user_access)
-                    response = f"User {user_to_add} approved for {time_value} {time_unit} by @Vaibhav_dhami.\n\n\n 🅑🅞🅣 🅛🅘🅝🅚: @Bgmi_ddos_v1_bot"
+                    response = f"User {user_to_add} approved for {time_value} {time_unit} by @Vaibhav_dhami.\n\n\n 🅑🅞🅣 🅛🅘🅝🅚: @Bgmi_ddos_v2_bot"
                 else:
                     response = "User already exists."
             except ValueError:
